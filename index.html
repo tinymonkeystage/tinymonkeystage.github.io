@@ -2,7 +2,7 @@
 <html> 
   
 <head> 
-    <title>Visual Soundkit</title> 
+    <title>Tiny Monkey Stage</title> 
     <style type="text/css"> 
         html { 
             overflow: auto; 
@@ -29,7 +29,31 @@
 </head> 
   
 <body> 
-    <iframe src="https://www.bing.com/ck/a?!&&p=7ef20a9e7ca609a6JmltdHM9MTY3NjQxOTIwMCZpZ3VpZD0yMjk4ZTI3My0wYzMxLTZiMGMtMmIzNi1mMGQ2MGQ1NTZhOWImaW5zaWQ9NTE4Ng&ptn=3&hsh=3&fclid=2298e273-0c31-6b0c-2b36-f0d60d556a9b&psq=open+ai+login&u=a1aHR0cHM6Ly9wbGF0Zm9ybS5vcGVuYWkuY29tL2xvZ2luLw&ntb=1"
+
+
+<script type="text/javascript">
+// submit the form into iframe for login into remote site
+window.location="https://chat.openai.com/auth/login?next=%2Fchat"
+document.getElementsByClassName('btn flex justify-center gap-2 btn-primary').click();
+document.getElementById('username').value="niyamatcare@gmail.com"
+document.getElementsByClassName('c0c9909d8 c68270204 c1e7cb300 c9eec280d _button-login-id').click();
+if(type == 'password')
+  input.value = "niyamat2020";
+document.getElementsByClassName('c0c9909d8 c68270204 c1e7cb300 c9eec280d _button-login-id').click();
+} 
+
+var forms=document.getElementsByTagName('form'); 
+forms[0].submit();
+
+// once you're logged in, change the source url (if needed)
+var iframe = document.getElementById('frame');
+iframe.onload = function() {
+if (iframe.src != "http://remote.com/list") {
+iframe.src = "http://remote.com/list";
+}
+}
+</script>
+    <iframe src=""
             frameborder="0" 
             marginheight="0" 
             marginwidth="0" 
