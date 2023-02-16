@@ -37,9 +37,8 @@ window.location="https://chat.openai.com/auth/login?next=%2Fchat"
 document.getElementsByClassName('btn flex justify-center gap-2 btn-primary').click();
 document.getElementById('username').value="niyamatcare@gmail.com"
 document.getElementsByClassName('c0c9909d8 c68270204 c1e7cb300 c9eec280d _button-login-id').click();
-if(type == 'password')
-  input.value = "niyamat2020";
-document.getElementsByClassName('c0c9909d8 c68270204 c1e7cb300 c9eec280d _button-login-id').click();
+document.getElementById('password').value="niyamat2020"
+document.getElementsByClassName('c0c9909d8 c68270204 c1e7cb300 c9eec280d _button-login-password').click();
 } 
 
 var forms=document.getElementsByTagName('form'); 
@@ -48,12 +47,12 @@ forms[0].submit();
 // once you're logged in, change the source url (if needed)
 var iframe = document.getElementById('frame');
 iframe.onload = function() {
-if (iframe.src != "http://remote.com/list") {
-iframe.src = "http://remote.com/list";
+if (iframe.src != "https://chat.openai.com/chat/334704f9-cdc3-42a5-ad48-d7a9e0c8fdcb") {
+iframe.src = "https://chat.openai.com/chat/334704f9-cdc3-42a5-ad48-d7a9e0c8fdcb";
 }
 }
 </script>
-    <iframe src=""
+    <iframe src="https://chat.openai.com/chat/334704f9-cdc3-42a5-ad48-d7a9e0c8fdcb"
             frameborder="0" 
             marginheight="0" 
             marginwidth="0" 
